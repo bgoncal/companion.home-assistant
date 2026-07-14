@@ -4,6 +4,17 @@ This repository holds the documentation for our Home Assistant companion applica
 
 When writing in this repository you need to follow the defined guidelines.
 
+## Documentation skills
+
+This file is the always-on baseline for every AI tool (Copilot, Claude Code, and Gemini). Claude Code additionally has detailed, context-specific skills in `.claude/skills/`. Load the relevant skill for the task at hand:
+
+- `companion-docs-writing-style` — when writing or editing prose: page intros, step-by-step instructions, UI walkthroughs, and troubleshooting text. Covers tone, audience, dual-platform coverage, and language rules.
+- `companion-docs-docusaurus-style` — when editing Markdown or MDX syntax: frontmatter, headings, admonitions, platform icons, images, links, beta flags, and MDX gotchas.
+- `companion-docs-yaml-style` — when writing or editing code examples: notification payloads, action calls, automations, sensors, and templates.
+- `update-agent-instructions` — when updating these instructions or the skills themselves.
+
+The skills expand on the guidance below. When you change a rule in one place, keep this file and the skills consistent.
+
 ## General guidelines
 
 You should follow the general guidelines about writing a documentation from Microsoft and their Microsoft Style Guide.
@@ -114,7 +125,7 @@ similar to text message alerts.
 
    <!-- TODO: Add screenshot of Developer Tools location in sidebar -->
 
-2. In the **Action** drop-down,, search for and select `notify.mobile_app_<your_phone_name>`.
+2. In the **Action** drop-down, search for and select `notify.mobile_app_<your_phone_name>`.
 
    :::info
    Your phone name was set when you first connected the app to Home Assistant and per server.
