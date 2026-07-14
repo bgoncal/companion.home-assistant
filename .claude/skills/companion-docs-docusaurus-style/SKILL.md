@@ -147,6 +147,7 @@ https://www.home-assistant.io/installation/
 
 - Curly braces `{ }` and angle brackets `< >` are parsed as JSX. Escape them or wrap them in an inline code span or code fence when they are literal content.
 - Home Assistant Jinja2 templates (`{{ ... }}`, `{% ... %}`) must live inside a fenced code block so MDX does not try to interpret the braces. See `companion-docs-yaml-style` for template formatting.
+- Do not use the Jekyll/Liquid `{% raw %}` tag to escape templates. It is a Jekyll-only construct, is not supported by Docusaurus, and would render literally on the page. A fenced code block is all you need.
 - When in doubt, prefer a `.md` file. Use `.mdx` only when you need JSX, imported components, or Docusaurus-specific interactivity.
 
 ## Local development

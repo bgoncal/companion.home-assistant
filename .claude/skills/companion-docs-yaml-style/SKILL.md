@@ -20,7 +20,8 @@ For prose and tone, use `companion-docs-writing-style`. For fenced-code and MDX 
 ## Strings and placeholders
 
 - Values like entity IDs, action names, and device classes do not need quotes. Quote other strings with double quotes when quoting aids clarity or is required.
-- Use capital letters and underscores for values the reader must replace, for example `token: YOUR_LONG_LIVED_TOKEN` or `notify.mobile_app_<your_phone_name>`.
+- Use capital letters with underscores for a whole value the reader must replace, for example `token: YOUR_LONG_LIVED_TOKEN`.
+- For a placeholder embedded inside a longer identifier, use angle brackets around a lowercase name, matching the convention already used across the companion docs, for example `notify.mobile_app_<your_phone_name>`.
 - Put comments on their own line above the code they describe, indented to match:
 
   ```yaml

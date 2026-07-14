@@ -86,7 +86,7 @@ You should follow the general guidelines about writing a documentation from Micr
 6. **Misc**
    - Use a serial comma (also known as the Oxford comma) before the conjunction in a list of three or more items. For example, "Through the use of additional adapters, Home Assistant allows the use of Zigbee, Z-Wave, and other protocols".
    - Don't use "e.g.". Instead, use _for example_, _such as_, or _like_.
-   - All examples containing Jinja2 templates should be wrapped _outside_ of the code markdown with the `{% raw %}` tag.
+   - Wrap Jinja2 templates in fenced code blocks. In Docusaurus MDX, unescaped `{{ }}` and `{% %}` are parsed as JSX and break the page. Do not use the Jekyll/Liquid `{% raw %}` tag; it is not supported here.
 
 ## Target audience
 
