@@ -4,6 +4,17 @@ This repository holds the documentation for our Home Assistant companion applica
 
 When writing in this repository you need to follow the defined guidelines.
 
+## Documentation skills
+
+This file is the always-on baseline for every AI tool (Copilot, Claude Code, and Gemini). Claude Code additionally has detailed, context-specific skills in `.claude/skills/`. Load the relevant skill for the task at hand:
+
+- `companion-docs-writing-style` — when writing or editing prose: page intros, step-by-step instructions, UI walkthroughs, and troubleshooting text. Covers tone, audience, dual-platform coverage, and language rules.
+- `companion-docs-docusaurus-style` — when editing Markdown or MDX syntax: frontmatter, headings, admonitions, platform icons, images, links, beta flags, and MDX gotchas.
+- `companion-docs-yaml-style` — when writing or editing code examples: notification payloads, action calls, automations, sensors, and templates.
+- `update-agent-instructions` — when updating these instructions or the skills themselves.
+
+The skills expand on the guidance below. When you change a rule in one place, keep this file and the skills consistent.
+
 ## General guidelines
 
 You should follow the general guidelines about writing a documentation from Microsoft and their Microsoft Style Guide.
@@ -75,7 +86,7 @@ You should follow the general guidelines about writing a documentation from Micr
 6. **Misc**
    - Use a serial comma (also known as the Oxford comma) before the conjunction in a list of three or more items. For example, "Through the use of additional adapters, Home Assistant allows the use of Zigbee, Z-Wave, and other protocols".
    - Don't use "e.g.". Instead, use _for example_, _such as_, or _like_.
-   - All examples containing Jinja2 templates should be wrapped _outside_ of the code markdown with the `{% raw %}` tag.
+   - Wrap Jinja2 templates in fenced code blocks. In Docusaurus MDX, unescaped `{{ }}` and `{% %}` are parsed as JSX and break the page. Do not use the Jekyll/Liquid `{% raw %}` tag; it is not supported here.
 
 ## Target audience
 
@@ -114,7 +125,7 @@ similar to text message alerts.
 
    <!-- TODO: Add screenshot of Developer Tools location in sidebar -->
 
-2. In the **Action** drop-down,, search for and select `notify.mobile_app_<your_phone_name>`.
+2. In the **Action** drop-down, search for and select `notify.mobile_app_<your_phone_name>`.
 
    :::info
    Your phone name was set when you first connected the app to Home Assistant and per server.

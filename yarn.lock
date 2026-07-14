@@ -5519,9 +5519,9 @@ http-parser-js@>=0.5.1:
   integrity sha512-n1XsPy3rXVxlqxVioEWdC+0+M+SQw0DpJynwtOPo1X+ZlvdzTLtDBIJJlDQTnwZIFJrZSzSGmIOUdP8tu+SgLw==
 
 http-proxy-middleware@^2.0.9:
-  version "2.0.9"
-  resolved "https://registry.yarnpkg.com/http-proxy-middleware/-/http-proxy-middleware-2.0.9.tgz#e9e63d68afaa4eee3d147f39149ab84c0c2815ef"
-  integrity sha512-c1IyJYLYppU574+YI7R4QyX2ystMtVXZwIdzazUIPIJsHuWNd+mho2j+bKoHftndicGj9yh+xjd+l0yj7VeT1Q==
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/http-proxy-middleware/-/http-proxy-middleware-2.0.10.tgz#b2df7b705203d7a8c269ac8450cf96b00c532f94"
+  integrity sha512-RKzRWNPxUZqbuk3BC5mGVJbBnWgr+diEnjJexIOytFbBzDy88Fbh/YvBr3DsNrl1jYAfjWfpATEv0NO35FDuPQ==
   dependencies:
     "@types/http-proxy" "^1.17.8"
     http-proxy "^1.18.1"
@@ -9291,9 +9291,9 @@ undici-types@~6.20.0:
   integrity sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==
 
 undici@^6.19.5:
-  version "6.24.0"
-  resolved "https://registry.yarnpkg.com/undici/-/undici-6.24.0.tgz#ad36b879b4882d14addc13dd641da7ed7ac7623a"
-  integrity sha512-lVLNosgqo5EkGqh5XUDhGfsMSoO8K0BAN0TyJLvwNRSl4xWGZlCVYsAIpa/OpA3TvmnM01GWcoKmc3ZWo5wKKA==
+  version "6.27.0"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-6.27.0.tgz#41f9e48f7c5a40d27376caaead8c9a9fc7bca9c4"
+  integrity sha512-YmfV3YnEDzXRC5lZ2jWtWWHKGUm1zIt8AhesR1tens+HTNv+YZlN/dp6G727LOvMJ8xjP9Be7Y2Sdr96LDm+pg==
 
 unicode-canonical-property-names-ecmascript@^2.0.0:
   version "2.0.1"
