@@ -33,7 +33,7 @@ You should follow the general guidelines about writing a documentation from Micr
    - Always use sentence-style capitalization in headings: capitalize only the first word and proper nouns (brand names, product names, and platform names). Never use title case.
      - Good: `### Notification icon and color`, `## Sending a notification to your phone`, `## Setting up Android Auto`
      - Bad: `### Notification Icon and Color`, `## Sending a Notification to Your Phone`, `## Setting Up Android Auto`
-   - This rule applies to all headings in new and updated documentation, even when the surrounding page still uses title case. Do not match the capitalization of existing headings that break this rule.
+   - This rule applies to every heading you add or change, even when other headings on the same page still use title case. You do not need to rewrite unrelated existing headings, but do not copy their capitalization.
    - When you change a heading, also update any link text that refers to it. For example, `See [Notification icon and color](#notification-icon-and-color)`.
    - Organize content with appropriate heading levels (`#`, `##`, `###`).
 
